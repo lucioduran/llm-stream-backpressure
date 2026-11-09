@@ -180,13 +180,13 @@ class Session:
                 self.record("disconnect", produced=self.produced)
                 writer.transport.abort()
                 send.cancel()
-                await asyncio.gather(send, return_exceptions=True)
                 if self.provider.supports_cancel:
                     pump.cancel()
-                    await asyncio.gather(pump, return_exceptions=True)
+                    await asyncio.gather(send, pump, return_exceptions=True)
                     await self.provider.cancel()
                     self.record("cancelled", produced=self.produced)
                 else:
+                    await asyncio.gather(send, return_exceptions=True)
                     discard = asyncio.create_task(self.discard())
                     tasks.append(discard)
                     await asyncio.gather(pump, discard)

@@ -137,9 +137,8 @@ class TransportTests(unittest.IsolatedAsyncioTestCase):
             await writer.drain()
             await reader.readuntil(b"\r\n\r\n")
             # Closing a stalled socket can await the peer's receive window.
-            await asyncio.sleep(0.1)
-            writer.transport.abort()
             await asyncio.wait_for(sessions[0].finished.wait(), 2)
+            writer.transport.abort()
             self.assertIsNotNone(sessions[0].disconnect_produced)
 
     async def test_invalid_http(self):

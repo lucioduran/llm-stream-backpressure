@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "started_utc": "2026-11-09T20:20:38.885792+00:00",
+  "code_commit": "b2262f73b3f9d0436904236d9529148cfd83598e",
+  "matrix_sha256": "0d01e687b43da017c3303525f30eb3120584ff30ff429dc0022884076e646557",
+  "source_sha256": {
+    "src/stream_backpressure/__init__.py": "00cf6ba74fd1f338d484b2ed5853b0b579fce43b7cff12e9cea188aebb49e5b6",
+    "src/stream_backpressure/core.py": "6a256a40a0d2163c5bc43d3914cb70b4d18556abbc326a7ade012e420d72d2ee",
+    "src/stream_backpressure/server.py": "0cbb1681809c079b9dac668c916b28de9d0ac49ede4770890e3be0e0ab82f9d6",
+    "experiments/run.py": "4847fcb070eb9eead80d8ac7d03ebdef2860ceedc5f05cfbfcc39a684d8e0e0a"
+  },
+  "python": "3.12.11 (main, Sep 18 2025, 19:48:34) [Clang 20.1.4 ]",
+  "platform": "macOS-26.7.1-x86_64-i386-64bit",
+  "machine": "x86_64",
+  "cpu_count": 16,
+  "hardware": "Intel(R) Xeon(R) W-3223 CPU @ 3.50GHz\n51539607552",
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "method": "One local run per frozen case; monotonic event timestamps; tracemalloc includes server, retained client payloads and instrumentation. No LLM inference. No statistical confidence claim.",
+  "cases": {
+    "fast": {
+      "raw_sha256": "93955680e3547f3c6d535ae8f0c8b92e317e53cd009dbf476a7f68a1a99f200c",
+      "python_traced_peak_bytes": 18934392,
+      "process_peak_rss_native_units": 55824384,
+      "requests": [
+        {
+          "produced": 300,
+          "received": 301,
+          "first_data_ms": 13.669982,
+          "client_duration_ms": 1261.430238,
+          "residual_after_client_close": 0,
+          "residual_after_server_disconnect": 0,
+          "disconnect_detection_ms": null,
+          "queue_peak": 4,
+          "max_enqueue_wait_ms": 10.572153,
+          "max_drain_ms": 15.10356400103774,
+          "error_events": 0,
+          "write_buffer_peak": 68233,
+          "finished": true
+        }
+      ]
+    },
+    "slow": {
+      "raw_sha256": "37ba3fd65736ffa6f19f40f98750e9bc1a581fee4711f1418874760d646d49cc",
+      "python_traced_peak_bytes": 18945021,
+      "process_peak_rss_native_units": 69791744,
+      "requests": [
+        {
+          "produced": 300,
+          "received": 301,
+          "first_data_ms": 4.552973,
+          "client_duration_ms": 1557.892873,
+          "residual_after_client_close": 0,
+          "residual_after_server_disconnect": 0,
+          "disconnect_detection_ms": null,
+          "queue_peak": 4,
+          "max_enqueue_wait_ms": 28.323995,
+          "max_drain_ms": 28.799520998290973,
+          "error_events": 0,
+          "write_buffer_peak": 68233,
+          "finished": true
+        }
+      ]
+    },
+    "cancel": {
+      "raw_sha256": "abde5288c76589ee1892e8efa94a22a466d3a778148fe7d2f1be5bf83dadd4b0",
+      "python_traced_peak_bytes": 299577,
+      "process_peak_rss_native_units": 69799936,
+      "requests": [
+        {
+          "produced": 6,
+          "received": 5,
+          "first_data_ms": 5.469289,
+          "client_duration_ms": 16.793975,
+          "residual_after_client_close": 1,
+          "residual_after_server_disconnect": 1,
+          "disconnect_detection_ms": 0.858837,
+          "queue_peak": 1,
+          "max_enqueue_wait_ms": 0.019489,
+          "max_drain_ms": 0.05637699723592959,
+          "error_events": 0,
+          "write_buffer_peak": 0,
+          "finished": true
+        }
+      ]
+    },
+    "unsupported": {
+      "raw_sha256": "d7e2453fe4ffb83381987cd44f9fcc1363836f16ce1fd9fc4d3d3c3d8dd40bf2",
+      "python_traced_peak_bytes": 298701,
+      "process_peak_rss_native_units": 69799936,
+      "requests": [
+        {
+          "produced": 100,
+          "received": 5,
+          "first_data_ms": 6.142365,
+          "client_duration_ms": 16.269351,
+          "residual_after_client_close": 95,
+          "residual_after_server_disconnect": 95,
+          "disconnect_detection_ms": 1.254274,
+          "queue_peak": 2,
+          "max_enqueue_wait_ms": 0.054105,
+          "max_drain_ms": 0.07582300167996436,
+          "error_events": 0,
+          "write_buffer_peak": 0,
+          "finished": true
+        }
+      ]
+    },
+    "upstream_error": {
+      "raw_sha256": "2805d229a86fec34651e6608daba08c9c4dd94c438938cc3ff7e39643f159fb0",
+      "python_traced_peak_bytes": 310870,
+      "process_peak_rss_native_units": 69799936,
+      "requests": [
+        {
+          "produced": 15,
+          "received": 17,
+          "first_data_ms": 4.64681,
+          "client_duration_ms": 34.385714,
+          "residual_after_client_close": 0,
+          "residual_after_server_disconnect": 0,
+          "disconnect_detection_ms": null,
+          "queue_peak": 2,
+          "max_enqueue_wait_ms": 0.019847,
+          "max_drain_ms": 0.07448199903592467,
+          "error_events": 1,
+          "write_buffer_peak": 0,
+          "finished": true
+        }
+      ]
+    },
+    "reset": {
+      "raw_sha256": "273551799db1358964f992c15914c4b4c64f559e4b1d01eea8782b68bb22b964",
+      "python_traced_peak_bytes": 1404099,
+      "process_peak_rss_native_units": 69812224,
+      "requests": [
+        {
+          "produced": 14,
+          "received": 5,
+          "first_data_ms": 10.270904,
+          "client_duration_ms": 27.867492,
+          "residual_after_client_close": 0,
+          "residual_after_server_disconnect": 0,
+          "disconnect_detection_ms": 2.067823,
+          "queue_peak": 4,
+          "max_enqueue_wait_ms": 2.484858,
+          "max_drain_ms": 4.87627799884649,
+          "error_events": 0,
+          "write_buffer_peak": 68159,
+          "finished": true
+        }
+      ]
+    },
+    "concurrent": {
+      "raw_sha256": "af2a17242b8ccce001d42d0f94b4e3c27e76b5d9532da54cfc55ddd6f604c22f",
+      "python_traced_peak_bytes": 1684151,
+      "process_peak_rss_native_units": 70320128,
+      "requests": [
+        {
+          "produced": 80,
+          "received": 81,
+          "first_data_ms": 9.236013,
+          "client_duration_ms": 265.177444,
+          "residual_after_client_close": 0,
+          "residual_after_server_disconnect": 0,
+          "disconnect_detection_ms": null,
+          "queue_peak": 2,
+          "max_enqueue_wait_ms": 0.030775,
+          "max_drain_ms": 0.09474400212639011,
+          "error_events": 0,
+          "write_buffer_peak": 0,
+          "finished": true
+        },
+        {
+          "produced": 80,
+          "received": 81,
+          "first_data_ms": 9.815819,
+          "client_duration_ms": 265.731993,
+          "residual_after_client_close": 0,
+          "residual_after_server_disconnect": 0,
+          "disconnect_detection_ms": null,
+          "queue_peak": 2,
+          "max_enqueue_wait_ms": 0.022226,
+          "max_drain_ms": 0.09393599975737743,
+          "error_events": 0,
+          "write_buffer_peak": 0,
+          "finished": true
+        },
+        {
+          "produced": 80,
+          "received": 81,
+          "first_data_ms": 9.698303,
+          "client_duration_ms": 266.786606,
+          "residual_after_client_close": 0,
+          "residual_after_server_disconnect": 0,
+          "disconnect_detection_ms": null,
+          "queue_peak": 2,
+          "max_enqueue_wait_ms": 0.062408,
+          "max_drain_ms": 0.14240999735193327,
+          "error_events": 0,
+          "write_buffer_peak": 0,
+          "finished": true
+        }
+      ]
+    }
+  },
+  "finished_utc": "2026-11-09T20:20:42.463666+00:00"
+}

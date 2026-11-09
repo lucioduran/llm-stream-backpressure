@@ -1,0 +1,27 @@
+{"action": "start", "request": 0, "time_ns": 32082196265105}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 0, "time_ns": 32082200913208}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082201089517, "wait_ns": 19489}
+{"action": "sent", "bytes": 176, "drain_seconds": 5.437199797597714e-05, "request": 0, "time_ns": 32082201386418}
+{"action": "received", "kind": "token", "request": 0, "sequence": 0, "time_ns": 32082201734394}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 1, "time_ns": 32082203569716}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082203733994, "wait_ns": 17168}
+{"action": "sent", "bytes": 176, "drain_seconds": 5.171999873709865e-05, "request": 0, "time_ns": 32082204041350}
+{"action": "received", "kind": "token", "request": 0, "sequence": 1, "time_ns": 32082204381583}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 2, "time_ns": 32082206044794}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082206155232, "wait_ns": 13036}
+{"action": "sent", "bytes": 176, "drain_seconds": 4.778600123245269e-05, "request": 0, "time_ns": 32082206696699}
+{"action": "received", "kind": "token", "request": 0, "sequence": 2, "time_ns": 32082207033735}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 3, "time_ns": 32082208760373}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082208937958, "wait_ns": 17736}
+{"action": "sent", "bytes": 175, "drain_seconds": 5.155100006959401e-05, "request": 0, "time_ns": 32082209285127}
+{"action": "received", "kind": "tool", "request": 0, "sequence": 3, "time_ns": 32082209648913}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 4, "time_ns": 32082211480375}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082211647128, "wait_ns": 16352}
+{"action": "sent", "bytes": 176, "drain_seconds": 5.6376997235929593e-05, "request": 0, "time_ns": 32082212579110}
+{"action": "received", "kind": "token", "request": 0, "sequence": 4, "time_ns": 32082212954866}
+{"action": "client_close", "request": 0, "time_ns": 32082213059080}
+{"action": "disconnect", "produced": 5, "request": 0, "time_ns": 32082213917917}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 5, "time_ns": 32082214398825}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082214564946, "wait_ns": 10272}
+{"action": "cancelled", "produced": 6, "request": 0, "time_ns": 32082215328775}
+{"action": "finished", "produced": 6, "request": 0, "sent": 5, "time_ns": 32082215519539}

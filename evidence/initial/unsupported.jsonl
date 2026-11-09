@@ -1,0 +1,311 @@
+{"action": "start", "request": 0, "time_ns": 32082218225898}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 0, "time_ns": 32082223283386}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082223566635, "wait_ns": 22069}
+{"action": "sent", "bytes": 176, "drain_seconds": 7.582300167996436e-05, "request": 0, "time_ns": 32082223907093}
+{"action": "received", "kind": "token", "request": 0, "sequence": 0, "time_ns": 32082224368263}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 1, "time_ns": 32082225953075}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082226055021, "wait_ns": 13256}
+{"action": "sent", "bytes": 176, "drain_seconds": 5.3812997066415846e-05, "request": 0, "time_ns": 32082226329517}
+{"action": "received", "kind": "token", "request": 0, "sequence": 1, "time_ns": 32082226740919}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 2, "time_ns": 32082228405678}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082228605205, "wait_ns": 18480}
+{"action": "sent", "bytes": 176, "drain_seconds": 3.3160999009851366e-05, "request": 0, "time_ns": 32082228851700}
+{"action": "received", "kind": "token", "request": 0, "sequence": 2, "time_ns": 32082229063925}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 3, "time_ns": 32082230908051}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082231098218, "wait_ns": 28992}
+{"action": "sent", "bytes": 175, "drain_seconds": 3.257500065956265e-05, "request": 0, "time_ns": 32082231384601}
+{"action": "received", "kind": "tool", "request": 0, "sequence": 3, "time_ns": 32082231710527}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 4, "time_ns": 32082233584409}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082233685737, "wait_ns": 12599}
+{"action": "sent", "bytes": 176, "drain_seconds": 4.7829002141952515e-05, "request": 0, "time_ns": 32082233919825}
+{"action": "received", "kind": "token", "request": 0, "sequence": 4, "time_ns": 32082234391653}
+{"action": "client_close", "request": 0, "time_ns": 32082234495249}
+{"action": "disconnect", "produced": 5, "request": 0, "time_ns": 32082235749523}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 5, "time_ns": 32082236596192}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082236762595, "wait_ns": 11073}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082237297943}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 6, "time_ns": 32082239242327}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082239347032, "wait_ns": 12242}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082239810979}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 7, "time_ns": 32082241690412}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082241873823, "wait_ns": 17563}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082242104667}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 8, "time_ns": 32082244631290}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082244814643, "wait_ns": 18235}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082245137705}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 9, "time_ns": 32082247396059}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082247575973, "wait_ns": 16898}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082247897808}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 10, "time_ns": 32082250083389}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082250309877, "wait_ns": 50085}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082250525903}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 11, "time_ns": 32082252910631}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082253085607, "wait_ns": 15702}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082253665248}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 12, "time_ns": 32082255457484}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082255557144, "wait_ns": 12317}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082255764779}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 13, "time_ns": 32082258144230}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082258319376, "wait_ns": 17593}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082258836593}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 14, "time_ns": 32082260615297}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082260796020, "wait_ns": 18519}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082261009891}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 15, "time_ns": 32082263323786}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082263495178, "wait_ns": 16281}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082263705021}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 16, "time_ns": 32082266158197}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082266341347, "wait_ns": 16404}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082266515889}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 17, "time_ns": 32082268894864}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082269062915, "wait_ns": 16537}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082269240555}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 18, "time_ns": 32082271744115}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082271937712, "wait_ns": 18347}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082272226398}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 19, "time_ns": 32082274378958}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082274566730, "wait_ns": 19550}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082274800722}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 20, "time_ns": 32082277089112}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082277264211, "wait_ns": 17845}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082277732337}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 21, "time_ns": 32082279763467}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082279953620, "wait_ns": 17248}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082280190960}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 22, "time_ns": 32082282303498}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082282496887, "wait_ns": 18275}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082282711495}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 23, "time_ns": 32082285060215}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082285235878, "wait_ns": 16573}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082285784024}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 24, "time_ns": 32082288007863}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082288166107, "wait_ns": 15668}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082288375963}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 25, "time_ns": 32082290588849}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082290875043, "wait_ns": 19652}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082291098844}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 26, "time_ns": 32082293656169}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082293835664, "wait_ns": 16809}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082294113154}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 27, "time_ns": 32082296468611}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082296872002, "wait_ns": 20302}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082297144189}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 28, "time_ns": 32082299172081}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082299337647, "wait_ns": 19034}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082299601732}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 29, "time_ns": 32082301670667}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082301847598, "wait_ns": 16950}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082302064109}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 30, "time_ns": 32082304189100}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082304372203, "wait_ns": 18066}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082304816192}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 31, "time_ns": 32082306675935}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082306845332, "wait_ns": 17481}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082307175493}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 32, "time_ns": 32082309555237}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082309721474, "wait_ns": 15672}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082310451067}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 33, "time_ns": 32082312282606}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082312463019, "wait_ns": 18344}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082312803959}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 34, "time_ns": 32082314965980}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082315149907, "wait_ns": 19054}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082315383761}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 35, "time_ns": 32082317440977}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082317608156, "wait_ns": 18848}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082317817673}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 36, "time_ns": 32082319961815}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082320123116, "wait_ns": 19233}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082320320947}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 37, "time_ns": 32082323017233}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082323190612, "wait_ns": 19195}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082323400580}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 38, "time_ns": 32082326051494}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082326250325, "wait_ns": 21189}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082326620055}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 39, "time_ns": 32082328771940}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082328883210, "wait_ns": 13787}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082329236255}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 40, "time_ns": 32082331417587}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082331596620, "wait_ns": 19393}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082331795505}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 41, "time_ns": 32082334167408}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082334328057, "wait_ns": 18660}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082334713693}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 42, "time_ns": 32082336825988}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082337029586, "wait_ns": 19725}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082337927368}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 43, "time_ns": 32082339375550}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082339556710, "wait_ns": 18572}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082339802632}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 44, "time_ns": 32082342292266}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082342466984, "wait_ns": 19602}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082343108332}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 45, "time_ns": 32082344996066}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082345179680, "wait_ns": 19207}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082345364778}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 46, "time_ns": 32082347653495}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082347821450, "wait_ns": 17731}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082348098463}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 47, "time_ns": 32082350353265}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082350530485, "wait_ns": 15617}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082350707668}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 48, "time_ns": 32082353082306}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082353267819, "wait_ns": 19304}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082353608485}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 49, "time_ns": 32082355537522}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082355679819, "wait_ns": 16020}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082355856922}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 50, "time_ns": 32082358160780}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082358347308, "wait_ns": 19783}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082358555280}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 51, "time_ns": 32082360622304}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082360793985, "wait_ns": 19435}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082360994778}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 52, "time_ns": 32082363190982}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082363357371, "wait_ns": 15515}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082363537742}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 53, "time_ns": 32082365913811}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082366094157, "wait_ns": 18483}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082366303991}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 54, "time_ns": 32082368565817}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082368747638, "wait_ns": 17492}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082368975054}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 55, "time_ns": 32082371865956}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082372029077, "wait_ns": 15742}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082372278524}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 56, "time_ns": 32082374429512}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082374614524, "wait_ns": 18018}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082374823462}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 57, "time_ns": 32082377170181}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082377352406, "wait_ns": 16895}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082377557233}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 58, "time_ns": 32082379765386}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082379948285, "wait_ns": 18028}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082380184223}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 59, "time_ns": 32082382494099}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082382675206, "wait_ns": 17429}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082383104629}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 60, "time_ns": 32082384986140}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082385165789, "wait_ns": 16759}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082385691370}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 61, "time_ns": 32082387552207}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082387731331, "wait_ns": 16922}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082388418430}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 62, "time_ns": 32082390018858}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082390246583, "wait_ns": 20960}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082390451076}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 63, "time_ns": 32082392728799}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082392870703, "wait_ns": 14891}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082393106345}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 64, "time_ns": 32082395304477}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082395476331, "wait_ns": 17247}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082395669285}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 65, "time_ns": 32082398218064}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082398415019, "wait_ns": 30222}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082398619750}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 66, "time_ns": 32082400956772}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082401121147, "wait_ns": 17175}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082401459841}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 67, "time_ns": 32082403798762}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082403976883, "wait_ns": 15382}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082404299416}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 68, "time_ns": 32082406538470}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082406722125, "wait_ns": 18382}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082406948900}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 69, "time_ns": 32082409750638}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082409914308, "wait_ns": 16078}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082411474656}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 70, "time_ns": 32082412621227}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082412801601, "wait_ns": 17027}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082413214883}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 71, "time_ns": 32082415250892}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082415408482, "wait_ns": 13629}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082415692008}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 72, "time_ns": 32082417884791}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082418146530, "wait_ns": 19353}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082418340653}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 73, "time_ns": 32082420760989}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082420938369, "wait_ns": 15422}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082421964154}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 74, "time_ns": 32082423395723}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082423578910, "wait_ns": 17956}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082423797566}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 75, "time_ns": 32082426350571}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082426529623, "wait_ns": 16735}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082427384296}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 76, "time_ns": 32082429243906}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082429437155, "wait_ns": 17304}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082429697711}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 77, "time_ns": 32082432067283}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082432244279, "wait_ns": 16994}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082432495687}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 78, "time_ns": 32082434732686}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082434912575, "wait_ns": 17601}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082435336786}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 79, "time_ns": 32082438372150}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082438564066, "wait_ns": 17329}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082438817440}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 80, "time_ns": 32082441047876}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082441226758, "wait_ns": 15521}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082441441903}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 81, "time_ns": 32082443728807}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082443895647, "wait_ns": 15922}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082444233476}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 82, "time_ns": 32082446159577}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082446354438, "wait_ns": 17583}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082446553982}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 83, "time_ns": 32082448725635}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082448897140, "wait_ns": 16175}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082449121481}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 84, "time_ns": 32082451545125}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082451730151, "wait_ns": 16211}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082451966776}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 85, "time_ns": 32082454232877}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082454408545, "wait_ns": 16575}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082455937965}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 86, "time_ns": 32082456849711}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082457067777, "wait_ns": 54105}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082457292778}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 87, "time_ns": 32082459724703}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082459904761, "wait_ns": 16959}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082460453730}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 88, "time_ns": 32082462241235}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082462587967, "wait_ns": 18021}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082463026436}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 89, "time_ns": 32082465115714}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082465287394, "wait_ns": 14634}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082465715044}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 90, "time_ns": 32082467567473}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082467749013, "wait_ns": 16795}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082467957966}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 91, "time_ns": 32082470533231}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082470712536, "wait_ns": 15311}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082471005551}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 92, "time_ns": 32082473036240}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082473247019, "wait_ns": 20273}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082473470686}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 93, "time_ns": 32082475823254}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082476004228, "wait_ns": 17026}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082476220889}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 94, "time_ns": 32082479691414}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082479856616, "wait_ns": 16171}
+{"action": "discarded", "bytes": 176, "request": 0, "time_ns": 32082480042938}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 95, "time_ns": 32082482380672}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082482564161, "wait_ns": 15460}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082483013590}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 96, "time_ns": 32082485053354}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082485215422, "wait_ns": 16828}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082485441071}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 97, "time_ns": 32082487817866}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082487990546, "wait_ns": 15015}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082488366929}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 98, "time_ns": 32082490455990}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082490637917, "wait_ns": 15805}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082490872284}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 99, "time_ns": 32082493158550}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32082493325293, "wait_ns": 16014}
+{"action": "enqueued", "queue": 2, "request": 0, "time_ns": 32082493475091, "wait_ns": 7305}
+{"action": "discarded", "bytes": 177, "request": 0, "time_ns": 32082493738673}
+{"action": "discarded", "bytes": 49, "request": 0, "time_ns": 32082493830173}
+{"action": "finished", "produced": 100, "request": 0, "sent": 5, "time_ns": 32082494213510}

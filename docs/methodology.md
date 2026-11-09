@@ -38,3 +38,11 @@ Python directories were not writable. Repository-local UV_CACHE_DIR and
 UV_PYTHON_INSTALL_DIR resolved installation. Socket-close review identified that a
 stalled peer could delay wait_closed after timeout; the disconnect path now aborts
 the local transport before upstream cleanup. Regression tests exercise that path.
+
+The initial installed-wheel regression run failed cancellation equality (5 completed
+versus 4 at disconnect detection). Initial measurements likewise observed one residual
+event. They are preserved in evidence/initial, with original source hashes and commit.
+The source implementation now cancels producer and sender before awaiting either,
+removing the scheduling window. This correction responds to a regression test failure;
+the frozen evaluation matrix and allowed residual threshold remain unchanged.
+Initial source hashes refer to the recorded historical commit, not current sources.
