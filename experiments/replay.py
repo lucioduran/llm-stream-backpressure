@@ -34,6 +34,18 @@ def verify(folder):
                 + matrix["thresholds"]["max_event_bytes"]
             )
             assert request["finished"]
+            received = [r for r in selected if r["action"] == "received"]
+            data = [r for r in received if r["kind"] in {"token", "tool"}]
+            assert [r["sequence"] for r in data] == list(range(len(data)))
+            assert all(
+                r["kind"] == ("tool" if r["sequence"] % 7 == 3 else "token")
+                for r in data
+            )
+            if "stop_after" not in case:
+                assert received[-1]["kind"] == "done"
+                assert len(data) == case.get("fail_at", case["count"])
+            else:
+                assert len(received) == case["stop_after"]
             if case.get("supports_cancel", True):
                 assert (
                     request["residual_after_server_disconnect"]

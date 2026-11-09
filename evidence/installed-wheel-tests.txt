@@ -1,0 +1,23 @@
+test_raw_tampering_rejected (test_replay.ReplayTests.test_raw_tampering_rejected) ... ok
+test_saved_evidence (test_replay.ReplayTests.test_saved_evidence) ... ok
+test_summary_tampering_rejected (test_replay.ReplayTests.test_summary_tampering_rejected) ... ok
+test_cancellation (test_stream.TransportTests.test_cancellation) ... ok
+test_concurrent_isolation (test_stream.TransportTests.test_concurrent_isolation) ... ok
+test_disconnect_races (test_stream.TransportTests.test_disconnect_races) ... ok
+test_empty (test_stream.TransportTests.test_empty) ... ok
+test_failure_is_terminal_and_sanitized (test_stream.TransportTests.test_failure_is_terminal_and_sanitized) ... ok
+test_invalid_http (test_stream.TransportTests.test_invalid_http) ... ok
+test_order_and_interleaved_tools (test_stream.TransportTests.test_order_and_interleaved_tools) ... ok
+test_oversize_event (test_stream.TransportTests.test_oversize_event) ... ok
+test_stalled_socket_bounds_and_cancels (test_stream.TransportTests.test_stalled_socket_bounds_and_cancels) ... ok
+test_truncated_response (test_stream.TransportTests.test_truncated_response) ... ok
+test_unsupported_cancellation (test_stream.TransportTests.test_unsupported_cancellation) ... ok
+test_write_timeout (test_stream.TransportTests.test_write_timeout) ... ok
+test_event_encoding (test_stream.ValidationTests.test_event_encoding) ... ok
+test_invalid_provider (test_stream.ValidationTests.test_invalid_provider) ... ok
+test_invalid_settings (test_stream.ValidationTests.test_invalid_settings) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.393s
+
+OK

@@ -6,3 +6,7 @@ __pycache__/
 dist/
 .uv-cache/
 .python/
+
+.wheel-env/
+wheel-env/
+evidence/new-run/

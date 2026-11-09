@@ -1,0 +1,39 @@
+{"action": "start", "request": 0, "time_ns": 32129544849158}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 0, "time_ns": 32129545971738}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32129546255257, "wait_ns": 9869}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 1, "time_ns": 32129546742949}
+{"action": "enqueued", "queue": 1, "request": 0, "time_ns": 32129547022268, "wait_ns": 6215}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 2, "time_ns": 32129547112012}
+{"action": "enqueued", "queue": 2, "request": 0, "time_ns": 32129547414963, "wait_ns": 9397}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 3, "time_ns": 32129547713158}
+{"action": "enqueued", "queue": 3, "request": 0, "time_ns": 32129548039677, "wait_ns": 6853}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 4, "time_ns": 32129548317048}
+{"action": "enqueued", "queue": 4, "request": 0, "time_ns": 32129548635444, "wait_ns": 8764}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 5, "time_ns": 32129549150695}
+{"action": "sent", "bytes": 60048, "drain_seconds": 0.003288656000222545, "request": 0, "time_ns": 32129549723224}
+{"action": "enqueued", "queue": 4, "request": 0, "time_ns": 32129549926038, "wait_ns": 493503}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 6, "time_ns": 32129550300580}
+{"action": "received", "kind": "token", "request": 0, "sequence": 0, "time_ns": 32129550768623}
+{"action": "sent", "bytes": 60048, "drain_seconds": 0.0013141249983164016, "request": 0, "time_ns": 32129551114575}
+{"action": "enqueued", "queue": 4, "request": 0, "time_ns": 32129551301555, "wait_ns": 732457}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 7, "time_ns": 32129551417568}
+{"action": "sent", "bytes": 60048, "drain_seconds": 0.0010188929991272744, "request": 0, "time_ns": 32129552213451}
+{"action": "enqueued", "queue": 4, "request": 0, "time_ns": 32129552361608, "wait_ns": 678076}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 8, "time_ns": 32129552484336}
+{"action": "sent", "bytes": 60047, "drain_seconds": 0.0009966550023818854, "request": 0, "time_ns": 32129553289217}
+{"action": "enqueued", "queue": 4, "request": 0, "time_ns": 32129553431992, "wait_ns": 678460}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 9, "time_ns": 32129553548110}
+{"action": "received", "kind": "token", "request": 0, "sequence": 1, "time_ns": 32129554132253}
+{"action": "sent", "bytes": 60048, "drain_seconds": 0.0013618669981951825, "request": 0, "time_ns": 32129554728917}
+{"action": "enqueued", "queue": 4, "request": 0, "time_ns": 32129554874145, "wait_ns": 1066876}
+{"action": "produced", "kind": "tool", "request": 0, "sequence": 10, "time_ns": 32129554994021}
+{"action": "sent", "bytes": 60048, "drain_seconds": 0.0010500069984118454, "request": 0, "time_ns": 32129555857183}
+{"action": "enqueued", "queue": 4, "request": 0, "time_ns": 32129555998614, "wait_ns": 741651}
+{"action": "produced", "kind": "token", "request": 0, "sequence": 11, "time_ns": 32129556184277}
+{"action": "received", "kind": "token", "request": 0, "sequence": 2, "time_ns": 32129557525347}
+{"action": "received", "kind": "tool", "request": 0, "sequence": 3, "time_ns": 32129561366591}
+{"action": "received", "kind": "token", "request": 0, "sequence": 4, "time_ns": 32129564905727}
+{"action": "client_close", "request": 0, "time_ns": 32129564962901}
+{"action": "disconnect", "produced": 12, "request": 0, "time_ns": 32129565719875}
+{"action": "cancelled", "produced": 12, "request": 0, "time_ns": 32129565926915}
+{"action": "finished", "produced": 12, "request": 0, "sent": 6, "time_ns": 32129566027405}
