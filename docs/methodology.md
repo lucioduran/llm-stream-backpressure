@@ -46,3 +46,8 @@ The source implementation now cancels producer and sender before awaiting either
 removing the scheduling window. This correction responds to a regression test failure;
 the frozen evaluation matrix and allowed residual threshold remain unchanged.
 Initial source hashes refer to the recorded historical commit, not current sources.
+
+The first public CI run failed during Python setup: ubuntu-latest selected Ubuntu
+26.04, which has no actions/python-versions build of pinned Python 3.12.11. CI now
+pins Ubuntu 24.04 and macOS 14. No test executed in that failed Linux job. The failed
+run is retained at https://github.com/lucioduran/llm-stream-backpressure/actions/runs/42692448091.
