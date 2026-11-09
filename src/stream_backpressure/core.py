@@ -120,7 +120,9 @@ class Session:
         start = time.monotonic_ns()
         await self.queue.put(frame)
         self.high_water = max(self.high_water, self.queue.qsize())
-        self.record("enqueued", queue=self.queue.qsize(), wait_ns=time.monotonic_ns() - start)
+        self.record(
+            "enqueued", queue=self.queue.qsize(), wait_ns=time.monotonic_ns() - start
+        )
 
     async def pump(self) -> None:
         try:
@@ -170,10 +172,13 @@ class Session:
             completed, _ = await asyncio.wait(
                 [send, gone], return_when=asyncio.FIRST_COMPLETED
             )
-            disconnected = gone in completed or (send.done() and send.exception() is not None)
+            disconnected = gone in completed or (
+                send.done() and send.exception() is not None
+            )
             if disconnected:
                 self.disconnect_produced = self.produced
                 self.record("disconnect", produced=self.produced)
+                writer.transport.abort()
                 send.cancel()
                 await asyncio.gather(send, return_exceptions=True)
                 if self.provider.supports_cancel:

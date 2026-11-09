@@ -6,7 +6,12 @@ from stream_backpressure import Event, Server, Settings, SyntheticProvider, cons
 
 class ValidationTests(unittest.TestCase):
     def test_invalid_settings(self):
-        for kwargs in ({"capacity": 0}, {"max_event_bytes": 1}, {"write_high": 0}, {"write_timeout": 0}):
+        for kwargs in (
+            {"capacity": 0},
+            {"max_event_bytes": 1},
+            {"write_high": 0},
+            {"write_timeout": 0},
+        ):
             with self.assertRaises(ValueError):
                 Settings(**kwargs)
 
@@ -62,7 +67,11 @@ class TransportTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_oversize_event(self):
         sessions = []
-        async with Server(lambda: SyntheticProvider(payload=400), Settings(max_event_bytes=128), sessions.append) as server:
+        async with Server(
+            lambda: SyntheticProvider(payload=400),
+            Settings(max_event_bytes=128),
+            sessions.append,
+        ) as server:
             events = await consume(server.port)
         self.assertEqual(events[0]["kind"], "error")
         self.assertEqual(sessions[0].failure, "ValueError")
@@ -74,20 +83,34 @@ class TransportTests(unittest.IsolatedAsyncioTestCase):
     async def test_disconnect_races(self):
         for stop in (0, 1, 4):
             for abort in (False, True):
-                await self.scenario(SyntheticProvider(count=4), stop_after=stop, abort=abort)
+                await self.scenario(
+                    SyntheticProvider(count=4), stop_after=stop, abort=abort
+                )
 
     async def test_concurrent_isolation(self):
         sessions = []
-        async with Server(lambda: SyntheticProvider(count=12), on_session=sessions.append) as server:
-            outputs = await asyncio.gather(consume(server.port), consume(server.port, stop_after=2), consume(server.port))
+        async with Server(
+            lambda: SyntheticProvider(count=12), on_session=sessions.append
+        ) as server:
+            outputs = await asyncio.gather(
+                consume(server.port),
+                consume(server.port, stop_after=2),
+                consume(server.port),
+            )
         self.assertEqual([len(x) for x in outputs], [13, 2, 13])
         self.assertEqual(len(sessions), 3)
         self.assertTrue(all(s.finished.is_set() for s in sessions))
 
     async def test_stalled_socket_bounds_and_cancels(self):
         sessions = []
-        async with Server(lambda: SyntheticProvider(count=200, delay=0, payload=60000), Settings(capacity=2), sessions.append) as server:
-            reader, writer = await asyncio.open_connection("127.0.0.1", server.port, limit=1024)
+        async with Server(
+            lambda: SyntheticProvider(count=200, delay=0, payload=60000),
+            Settings(capacity=2),
+            sessions.append,
+        ) as server:
+            reader, writer = await asyncio.open_connection(
+                "127.0.0.1", server.port, limit=1024
+            )
             writer.write(b"GET /events HTTP/1.0\r\n\r\n")
             await writer.drain()
             await reader.readuntil(b"\r\n\r\n")
@@ -102,8 +125,14 @@ class TransportTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_write_timeout(self):
         sessions = []
-        async with Server(lambda: SyntheticProvider(count=200, delay=0, payload=60000), Settings(write_timeout=0.02), sessions.append) as server:
-            reader, writer = await asyncio.open_connection("127.0.0.1", server.port, limit=1024)
+        async with Server(
+            lambda: SyntheticProvider(count=200, delay=0, payload=60000),
+            Settings(write_timeout=0.02),
+            sessions.append,
+        ) as server:
+            reader, writer = await asyncio.open_connection(
+                "127.0.0.1", server.port, limit=1024
+            )
             writer.write(b"GET /events HTTP/1.0\r\n\r\n")
             await writer.drain()
             await reader.readuntil(b"\r\n\r\n")
@@ -128,6 +157,7 @@ class TransportTests(unittest.IsolatedAsyncioTestCase):
             writer.write(b"HTTP/1.0 200 OK\r\n\r\n")
             writer.close()
             await writer.wait_closed()
+
         server = await asyncio.start_server(broken, "127.0.0.1", 0)
         async with server:
             with self.assertRaises(ConnectionError):

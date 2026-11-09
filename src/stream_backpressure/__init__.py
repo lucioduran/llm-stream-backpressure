@@ -3,4 +3,12 @@
 from .core import Event, Provider, Session, Settings, SyntheticProvider
 from .server import Server, consume
 
-__all__ = ["Event", "Provider", "Session", "Settings", "SyntheticProvider", "Server", "consume"]
+__all__ = [
+    "Event",
+    "Provider",
+    "Session",
+    "Settings",
+    "SyntheticProvider",
+    "Server",
+    "consume",
+]

@@ -29,7 +29,9 @@ class Server:
         self.port = 0
 
     async def __aenter__(self) -> Server:
-        self.listener = await asyncio.start_server(self.accept, "127.0.0.1", 0, limit=8192)
+        self.listener = await asyncio.start_server(
+            self.accept, "127.0.0.1", 0, limit=8192
+        )
         self.port = self.listener.sockets[0].getsockname()[1]
         return self
 
@@ -40,7 +42,9 @@ class Server:
         if self.tasks:
             await asyncio.gather(*self.tasks)
 
-    async def accept(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter) -> None:
+    async def accept(
+        self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter
+    ) -> None:
         task = asyncio.current_task()
         assert task is not None
         self.tasks.add(task)
@@ -50,13 +54,22 @@ class Server:
                 writer.write(b"HTTP/1.0 400 Bad Request\r\n\r\n")
                 await writer.drain()
                 return
-            writer.get_extra_info("socket").setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, 8192)
-            writer.write(b"HTTP/1.0 200 OK\r\nContent-Type: text/event-stream\r\nCache-Control: no-cache\r\n\r\n")
+            writer.get_extra_info("socket").setsockopt(
+                socket.SOL_SOCKET, socket.SO_SNDBUF, 8192
+            )
+            writer.write(
+                b"HTTP/1.0 200 OK\r\nContent-Type: text/event-stream\r\nCache-Control: no-cache\r\n\r\n"
+            )
             session = Session(self.factory(), self.settings, self.trace)
             if self.on_session:
                 self.on_session(session)
             await session.run(reader, writer)
-        except (ConnectionError, TimeoutError, asyncio.IncompleteReadError, asyncio.LimitOverrunError):
+        except (
+            ConnectionError,
+            TimeoutError,
+            asyncio.IncompleteReadError,
+            asyncio.LimitOverrunError,
+        ):
             pass
         finally:
             writer.close()
@@ -91,11 +104,23 @@ async def consume(
             except asyncio.IncompleteReadError as exc:
                 raise ConnectionError("Stream ended without done event") from exc
             kind, data, _ = frame.decode().split("\n", 2)
-            event = {"kind": kind.removeprefix("event: "), **json.loads(data.removeprefix("data: "))}
+            event = {
+                "kind": kind.removeprefix("event: "),
+                **json.loads(data.removeprefix("data: ")),
+            }
             events.append(event)
             if trace:
-                trace({"action": "received", "time_ns": time.monotonic_ns(), "sequence": event["sequence"], "kind": event["kind"]})
-            if event["kind"] == "done" or (stop_after is not None and len(events) >= stop_after):
+                trace(
+                    {
+                        "action": "received",
+                        "time_ns": time.monotonic_ns(),
+                        "sequence": event["sequence"],
+                        "kind": event["kind"],
+                    }
+                )
+            if event["kind"] == "done" or (
+                stop_after is not None and len(events) >= stop_after
+            ):
                 return events
             await asyncio.sleep(delay)
     finally:

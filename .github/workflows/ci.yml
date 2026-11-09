@@ -1,0 +1,30 @@
+name: CI
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.11'
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pip install -e . --no-build-isolation
+      - run: ruff check src tests experiments
+      - run: ruff format --check src tests experiments
+      - run: mypy
+      - run: python -m unittest discover -s tests -v
+      - run: python experiments/replay.py
+      - run: python -m build --wheel --no-isolation
+      - name: Installed wheel smoke and regression suite
+        shell: bash
+        run: |
+          python -m venv wheel-env
+          wheel-env/bin/python -m pip install --no-deps dist/*.whl
+          wheel-env/bin/python -m unittest discover -s tests -v
+          wheel-env/bin/python -c 'import asyncio; from stream_backpressure import Server, SyntheticProvider, consume; print("Wheel import successful")'
