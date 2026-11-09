@@ -143,7 +143,8 @@ python3.12 -m venv .wheel-env
 Tests exercise actual sockets, interleaved events, queue saturation, write timeout,
 disconnect races, concurrent isolation, supported/unsupported cancellation, errors,
 oversized frames, malformed requests, truncated responses and evidence tampering.
-CI repeats checks and installed-wheel tests on Linux and macOS with Python 3.12.11.
+CI repeats checks and installed-wheel tests on Ubuntu 24.04 with Python 3.12.11.
+macOS coverage is the recorded local x86_64 run; hosted macOS was not verified.
 
 ## Limitations
 

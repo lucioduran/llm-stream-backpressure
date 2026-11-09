@@ -58,3 +58,9 @@ CI then exposed a missing `editables` dependency when installing without build
 isolation, and the retired macOS 14 runner label was rejected. The development
 requirements now pin editables 0.5, and CI uses supported macOS 15. The failed run
 is retained at https://github.com/lucioduran/llm-stream-backpressure/actions/runs/42692624826.
+
+The macOS 15 hosted job remained queued without a runner for more than four minutes.
+Release CI is limited to Ubuntu 24.04. macOS evidence is the actual local x86_64
+measurement and installed-wheel tests; hosted macOS and ARM compatibility are not
+claimed. The superseded queued runs were cancelled. This CI-scope adjustment does
+not alter the implementation, measurement matrix, raw evidence or replay thresholds.
