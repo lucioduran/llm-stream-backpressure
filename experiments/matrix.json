@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "seed": 0,
+  "producer": "deterministic synthetic, no model",
+  "partitions": {"development": "unit tests", "evaluation": "the seven cases below; frozen before measurement"},
+  "thresholds": {"capacity": 4, "max_event_bytes": 65536, "write_high": 32768, "write_timeout": 5.0, "supported_residual_max": 1},
+  "cases": [
+    {"name": "fast", "count": 300, "payload": 60000, "delay": 0, "client_delay": 0},
+    {"name": "slow", "count": 300, "payload": 60000, "delay": 0, "client_delay": 0.004},
+    {"name": "cancel", "count": 100, "payload": 128, "delay": 0.002, "client_delay": 0, "stop_after": 5},
+    {"name": "unsupported", "count": 100, "payload": 128, "delay": 0.002, "client_delay": 0, "stop_after": 5, "supports_cancel": false},
+    {"name": "upstream_error", "count": 100, "payload": 128, "delay": 0.001, "client_delay": 0, "fail_at": 15},
+    {"name": "reset", "count": 300, "payload": 60000, "delay": 0, "client_delay": 0.003, "stop_after": 5, "abort": true},
+    {"name": "concurrent", "count": 80, "payload": 4096, "delay": 0.001, "client_delay": 0.002, "concurrency": 3}
+  ]
+}

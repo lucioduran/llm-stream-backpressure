@@ -83,6 +83,8 @@ class Settings:
     def __post_init__(self) -> None:
         if min(self.capacity, self.max_event_bytes, self.write_high) <= 0:
             raise ValueError("Buffer bounds must be positive")
+        if self.max_event_bytes < 128:
+            raise ValueError("Event bound must accommodate terminal frames")
         if self.write_timeout <= 0:
             raise ValueError("Write timeout must be positive")
 
