@@ -51,3 +51,5 @@ The first public CI run failed during Python setup: ubuntu-latest selected Ubunt
 26.04, which has no actions/python-versions build of pinned Python 3.12.11. CI now
 pins Ubuntu 24.04 and macOS 14. No test executed in that failed Linux job. The failed
 run is retained at https://github.com/lucioduran/llm-stream-backpressure/actions/runs/42692448091.
+The setup-python manifest also lacks macOS Python 3.12.11 builds. CI uses pinned
+uv 0.8.23 to install Python 3.12.11, matching the local installer, on both runner images.
