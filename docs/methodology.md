@@ -53,3 +53,8 @@ pins Ubuntu 24.04 and macOS 14. No test executed in that failed Linux job. The f
 run is retained at https://github.com/lucioduran/llm-stream-backpressure/actions/runs/42692448091.
 The setup-python manifest also lacks macOS Python 3.12.11 builds. CI uses pinned
 uv 0.8.23 to install Python 3.12.11, matching the local installer, on both runner images.
+
+CI then exposed a missing `editables` dependency when installing without build
+isolation, and the retired macOS 14 runner label was rejected. The development
+requirements now pin editables 0.5, and CI uses supported macOS 15. The failed run
+is retained at https://github.com/lucioduran/llm-stream-backpressure/actions/runs/42692624826.
